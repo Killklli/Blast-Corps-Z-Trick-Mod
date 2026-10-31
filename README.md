@@ -1,4 +1,4 @@
-# BlastCorps: Recompiled Z Trick Restoration
+# BlastCorps: Recompiled Z Trick
 
 This mod restores the ability to use the Z Trick that was in v1.0 of the original blast corps game
 
