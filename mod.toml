@@ -1,0 +1,58 @@
+# Config file for an example BlastCorps: Recompiled mod.
+
+# Fields that end up in the mod's manifest.
+[manifest]
+
+# Unique ID of this mod. Pick something long enough that it'll never be the same as any other mod.
+# The name displayed in the mod management menu is separate from this so this doesn't need to be human readable.
+id = "bc_recomp_z_trick"
+
+# Version of this mod.
+version = "1.0.0"
+
+# The name that will show up for this mod in the mod menu. This should be human readable.
+display_name = "Restore Z Trick"
+
+# The description that will show up when this mod is displayed in the mod menu. This should be human readable.
+description =  """Restores Z Trick from v1.0 gameplay."""
+
+# A short description that will show up in this mod's entry in the mod list. This should be human readable and kept short
+# to prevent it from being cut off due to the limited space.
+short_description = "Restores Z Trick from v1.0 gameplay."
+
+# Authors of this mod.
+authors = [ "Killklli" ]
+
+# ID of the target recomp game.
+game_id = "bc"
+
+# Minimum version of the target recomp (e.g. BlastCorps: Recompiled) that this mod can run on.
+minimum_recomp_version = "1.0.0"
+
+# Dependency mods. Each entry is the mod's ID and then an optional minimum version of the dependency mod.
+dependencies = [
+# Example dependency:
+#    "modname:1.0.0"
+]
+
+# Native libraries (e.g. DLLs) and the functions they export.
+native_libraries = [
+# Example native library:
+#    { name = "my_native_library", funcs = ["my_native_library_function"] }
+]
+
+# Inputs to the mod tool.
+[inputs]
+
+# Input elf file to generate a mod from.
+elf_path = "build/mod.elf"
+
+# Output mod filename.
+mod_filename = "bc_recomp_z_trick"
+
+# Reference symbol files.
+func_reference_syms_file = "syms/blastcorps.us.v11.toml"
+data_reference_syms_files = [ "syms/data_blastcorps.us.v11.toml" ]
+
+# Additional files to include in the mod.
+additional_files = [ "thumb.dds" ]
